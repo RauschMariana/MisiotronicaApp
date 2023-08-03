@@ -1,0 +1,28 @@
+.header {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url('./fondo.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 1;
+}
+
+.header-container {
+    text-align: center;
+    padding: 15% 0;
+}
+  
+.header h1 {
+    margin: 0;
+    color: rgb(227, 228, 229);
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 0 35px var(--textColor);
+}
+  
+.header p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}

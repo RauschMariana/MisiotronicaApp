@@ -1,0 +1,40 @@
+.navContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;   
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+}
+
+.logo{
+  font-weight: 500;
+}
+
+nav a{
+  margin: 0 2rem;
+  color: var(--textColor);     
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: var(--secondaryColor);
+}
+
+.navContainer .navBtn {
+  padding: 2px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.navContainer div, nav{
+  display: flex;
+  align-items: center;
+}

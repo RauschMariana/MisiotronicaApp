@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: rgb(2, 0, 36);
+    --secondaryColor: rgba(0, 212, 255, .5);
+    --thirdColor: rgb(227, 228, 229);
+    --textColor: rgb(0, 212, 255);
+}
+
+html {
+    background: var(--primaryColor);
+}
+
+
+

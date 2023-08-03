@@ -1,0 +1,40 @@
+
+.container-about {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('../Header/fondo.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 0.9;
+    color: var(--primaryColor);
+    text-align: center;
+    padding: 15% 0;
+}
+
+.container-about h1 {
+    margin: 0;
+    color: #e3e4e5;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 0 0 35px var(--textColor);
+}
+  
+.container-about p {
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #e3e4e5;
+    text-shadow: 1px 1px 3px var(--primaryColor);
+}
+
+.container-about a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 20px;
+}
+
+.container-about a:hover{
+    color: var(--thirdColor);
+}
