@@ -6,9 +6,14 @@ export const NoFound = () => {
     <>
         <div className='container-nofound'>
           <h1>Oops!</h1>
-          <p>Lo sentimos... <br />Página no encrontrada.</p>
+          <p>Lo sentimos...</p>
+          <h3>Error</h3>
+          <h2>404</h2>
+          <p>Página no encrontrada.</p>
 
-          <Link to='/#'>Volver </Link>
+          <button>
+            <Link to='/#'>Volver </Link>
+          </button>
         </div>
     </>
   )

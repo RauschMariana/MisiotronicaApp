@@ -1,32 +1,50 @@
 .container-nofound {
-    margin-top: 200px;
+    margin-top: 50px;
     text-align: center;
-    color: var(--textColor);
-    background-color: var(--primaryColor);
-
+    background: var(--primaryColor);
 }
 
 .container-nofound h1 {
-    font-size: 60px;
+    color: var(--thirdColor);
+    font-size: 30px;
 }
 
 
 .container-nofound p {
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-    font-size: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
     font-weight: 700;
-    color: #e3e4e5;
-    text-shadow: 1px 1px 3px var(--primaryColor);
-}
-
-.container-nofound a {
-    text-decoration: none;
-    color: var(--textColor);
-    font-size: 20px;
-}
-
-.container-nofound a:hover{
     color: var(--thirdColor);
+}
+
+.container-nofound h3 {
+    font-size: 70px;
+    color: var(--secondaryColor);
+}
+
+.container-nofound h2 {
+    font-size: 150px;
+    color: var(--secondaryColor);
+}
+
+.container-nofound button{
+    margin-top: 30px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 15px;
+    background: var(--primaryColor);
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.container-nofound button:hover{
+    background: var(--secondaryColor);
+}
+
+.container-nofound a{
+    color: var(--thirdColor);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }

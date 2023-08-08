@@ -1,16 +1,26 @@
 .container {
     display: grid;
-    height: 1px;  
+    height: 0px;  
     color: var(--textColor);
 }
 
 .container h2 {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     color: var(--thirdColor);
     font-size: 60px;
     font-weight: bold;
     text-shadow: 0 0 35px var(--textColor);
+}
+
+.container p {
+    margin-left: auto;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .contact {
@@ -61,6 +71,7 @@ form {
     padding: auto;
     margin: auto;
     font-size: 16px;
+    font-weight: bold;
     border: none;
     outline: 0px;
     background: var(--textColor);
@@ -73,17 +84,13 @@ form {
     background: var(--secondaryColor);
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.start .container-section .social {
+    margin: auto;
 }
-
 
 .social a {
     display: inline-block;
     text-decoration: none;
-    background-color: var(--primaryColor);
     color: var(--textColor);
     border-radius: 30%;
     font-size: 25px;
@@ -96,16 +103,6 @@ form {
 
 .social a:hover {
     color: #fff;
-    background-color: var(--textColor);
+    background: none;
     box-shadow: 0 0 20px #fff;
-}
-
-.container .back a {
-    text-decoration: none;
-    color: var(--textColor);
-    font-size: 20px;
-}
-
-.container .back a:hover{
-    color: var(--thirdColor);
 }

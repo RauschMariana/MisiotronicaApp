@@ -1,7 +1,6 @@
-
 .container-about {
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url('../Header/fondo.avif');
+    url('../Home/fondo.avif');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -21,20 +20,24 @@
   
 .container-about p {
     margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
     font-size: 30px;
     font-weight: 700;
     color: #e3e4e5;
     text-shadow: 1px 1px 3px var(--primaryColor);
 }
 
-.container-about a {
-    text-decoration: none;
-    color: var(--textColor);
-    font-size: 20px;
-}
+@media screen and (max-width:400px){
+    .container-about h1 {
+        font-size: 60px;
+    }
+    
+    .container-about p {
+        min-width: fit-content;
+        margin-top: 20px;
+        margin-left: 60px;
+        color: #e3e4e5;
+    }
 
-.container-about a:hover{
-    color: var(--thirdColor);
 }

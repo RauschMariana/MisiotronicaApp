@@ -1,19 +1,30 @@
 .navContainer{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 80px;
   padding: 0 2rem;   
   background-color: var(--primaryColor);
   color: var(--textColor);
 }
 
-.logo{
-  font-weight: 500;
+.navContainer .menu-logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0 0 35px #fff;
+}
+
+.navContainer .menu-logo img{
+  width: 60px;
+  height: 60px;
+}
+
+.navContainer .menu-logo .menu-color{
+  color: var(--textColor);
 }
 
 nav a{
-  margin: 0 2rem;
+  margin: 0 1rem;
   color: var(--textColor);     
   text-decoration: none;
 }
@@ -22,19 +33,62 @@ nav a:hover{
   color: var(--secondaryColor);
 }
 
-.navContainer .navBtn {
+.navBtn {
   padding: 2px;
+  cursor: pointer;
+  background: transparent;
   border: none;
   outline: none;
-  background: transparent;
-  cursor: pointer;
   color: var(--textColor);
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   font-size: 1.8rem;
 }
 
 .navContainer div, nav{
   display: flex;
   align-items: center;
+}
+
+
+@media only screen and (max-width:1024px){
+
+  button .navBtn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .navContainer nav a{
+    margin-top: 30px;
+  }
+
+  .navContainer nav {
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    gap: 2rem;
+    background: var(--primaryColor);
+    transition: 0.5s;
+  }
+
+  .navContainer .responsive {
+    transform: none;
+  }
+
+  .navContainer nav .navCloseBtn {
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+  }
+  .navContainer nav a {
+    font-size: 1.5rem;
+  }
 }

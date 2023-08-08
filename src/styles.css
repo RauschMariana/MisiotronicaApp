@@ -1,3 +1,5 @@
+*::after,
+*::before,
 *{
     margin: 0;
     padding: 0;
@@ -16,4 +18,109 @@ html {
 }
 
 
+.start {
+    display: flex;
+    background: var(--primaryColor);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.start .container-section {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.start .container-section header {
+    padding: 30px;
+}
+
+.start .container-section header  .container-links {
+    position: fixed;
+    margin-left: 60px;
+    background-color: var(--primaryColor);
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 99;
+    display: grid;
+    height: 300px;
+    border: 1px solid var(--secondaryColor);
+    
+}
+
+.start .container-section header .container-links a{
+    display: block;
+    color: var(--thirdColor);
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 35px var(--textColor);
+}
+
+.start .container-section header .container-links a:hover{
+    color: var(--secondaryColor);
+    text-shadow: 0 0 35px #fff;
+}
+
+.start .container-section header .menu-logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 0 35px #fff;
+}
+
+.start .container-section header .menu-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.start .container-section header .menu-logo .name-title{
+    margin-top: 10px;
+    margin-right: 50px;
+
+}
+
+.start .container-section header .icon-bag {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.start .container-section header .menu-logo .menu-color{
+    color: var(--textColor);
+}
+
+.start .container-section header .menu-btn{
+    margin: 10px;
+    position: fixed;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 42px;
+    cursor: pointer;
+    border: 1px solid var(--secondaryColor);
+    background: var(--primaryColor);
+    z-index: 99;
+    transition: .3s;
+}
+
+.start .container-section header .menu-btn:hover{
+    background: var(--textColor);
+    color: var(--thirdColor);
+    box-shadow: 0 0 35px #fff;
+}
+
+@media only screen and (max-width:1024px){
+    .start .container-section header .icon-bag {
+        margin-left: 30px;
+    }
+    
+}
 

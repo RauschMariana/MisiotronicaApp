@@ -1,32 +1,50 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { productData } from '../../data/productData';
+
 import './salesStyle.css';
+import { FaBars } from 'react-icons/fa';
+import { BsBag } from 'react-icons/bs';
+
+import { Search } from '../Search/Search';
+import { SalesCard } from './SalesCard';
 
 
 export const Sales = () => {
+
+    const [ show, setShow ] = useState( false );
+
+    const showMenu = () => {
+      setShow( !show );
+    };
+
   return (
     <>
-       <div className='container-product'>
-            { productData.map( (product, i) => (
-                <div key={ i.id } className='product'>
-                    <img src={ product.imgUrl } alt={ product.name } />
-                    <div>
-                        <p>
-                            { product.title }  <br />
-                            { product.description } <br />
-                            ${ product.price }
-                        </p>
-                    </div>
-                    <button onClick={() => console.log( product )}>Agregar al carrito</button>
-                </div>
-            ))}
-            <br />
-            <Link to='/#'>Volver </Link>
-              
-        </div>
+       <section className='start'>
+          <div className='container-section'>
+            <header>
+              <div className='menu-btn' onClick={ showMenu }>
+                <FaBars />
+              </div>
+              {show && (
+                <div id='menu-nav'>
+                  <div className='container-links'>
+                    <Link to='/'>Inicio</Link>
+                    <Link to='/about'>Sobre Nosotros</Link>
+                    <Link to='/contact'>Contacto</Link>
+                  </div>
+                </div> 
+              )}
+              <div className='menu-logo' >
+                <img src={require('../../assets/mt.png')} alt='mt'/>
+                <span className='name-title'>Misio<span className='menu-color'>T</span>rónica</span>
+                <span className='icon-bag'><BsBag size={ 30 }/></span>  
+              </div>   
+            </header>
+          </div>
+        </section>
 
-  
-        
+        <Search/>
+        <SalesCard/>
     </>
   );
 }

@@ -1,64 +1,86 @@
-.container-product {
-    width: 100%;
+
+.products {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
     grid-row-gap: 20px;
     grid-column-gap: 75px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     background: var(--primaryColor);
+    color: var(--textColor);
+    padding: 100px;
+}
+
+.container-products {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+    gap: 10px;
+    border: 1px solid var(--textColor);
+    background-color: #fff;
+}
+
+.container-products img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.container-products h5, .atribute {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
     color: var(--primaryColor);
 }
 
-.container-product .product {
-    width: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 60px;
+.products .btn-link {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: var(--secondaryColor);
+    justify-content: space-evenly;
+    color: var(--textColor);     
+    text-decoration: none;
 }
 
-.product img {
-    width: 100%;
-}
-
-.product p {
-    font-weight: bold;
-    text-align: center;
-}
-
-.product button {
+.products .btn-link a {
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
-    background: var(--thirdColor);
-
-}
-.product button:hover {
     background: var(--textColor);
-}
-
-a {
+    color: var(--primaryColor);
+    font-weight: bold;
     text-decoration: none;
-    color: var(--textColor);
-    font-size: 20px;
 }
 
-a:hover{
-    color: var(--thirdColor);
+.products .btn-link a:hover {
+    background: var(--secondaryColor);
 }
+  
 
-@media screen and (max-width:800px){
-    .container-product {
+@media only screen and (max-width:1024px){
+    .search .container-search {
+        height: 30px;
+        width: 90%;
+        min-width: 300px;
+        background: #fff;
+        border: 3px solid var(--textColor);
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 0px;
+        border-radius: 10px;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+    }
 
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
+    .products {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 
+    .products .btn-link {
+        display: grid;  
     }
 }

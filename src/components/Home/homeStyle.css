@@ -9,18 +9,24 @@
 
 .header-container {
     text-align: center;
-    padding: 15% 0;
+    padding: 15%;
 }
+
   
 .header h1 {
-    margin: 0;
+    margin-bottom: 40px;
     color: rgb(227, 228, 229);
     font-size: 100px;
     font-weight: bold;
     text-shadow: 0 0 35px var(--textColor);
 }
+
+.header .menu-color {
+    color: var(--textColor);
+}
   
 .header p {
+    text-align: center;
     font-size: 30px;
     color: white;
     opacity: 0.7;
